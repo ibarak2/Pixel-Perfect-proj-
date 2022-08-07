@@ -370,7 +370,7 @@ p {
 
 @media (max-width: 839px) {
   .main-nav-list {
-    /* display: none; */
+    display: none;
     position: absolute;
     flex-direction: column;
     left: 0;
