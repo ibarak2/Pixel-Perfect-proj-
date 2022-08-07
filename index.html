@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfect App</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="main-layout ">
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="main-header full">
+        <div class="main-header-content flex space-between align-center">
+
+            <div class="logo">Blogin<span class="dot">.</span></div>
+            <nav class="main-nav">
+                <ul class="main-nav-list flex clean-list">
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="toggle-menu" onclick="toggleMenu()">☰</button>
+        </div>
+
+    </header>
+
+    <main class="main-content cards-layout flex">
+        <section class="card flex">
+            <img src="imgs/img-01.jpg" alt="" class="card-img">
+            <div class="card-components flex ">
+
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()" class="card-button">Continue Reading <span class="arrow">→</span></button>
+            </div>
+        </section>
+
+        <section class="card flex">
+            <img src="imgs/img-02.jpg" alt="" class="card-img">
+            <div class="card-components flex ">
+
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()" class="card-button">Continue Reading <span class="arrow">→</span></button>
+            </div>
+        </section>
+
+        <section class="card flex">
+            <img src="imgs/img-03.jpg" alt="" class="card-img">
+            <div class="card-components flex ">
+
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()" class="card-button">Continue Reading <span class="arrow">→</span></button>
+            </div>
+        </section>
+
+        <section class="cards-navigation flex space-between">
+            <button class="previous-button"><span>←</span>  Previous</button>
+            <button class="next-button">Next →</button>
+        </section>
+    </main>
+
+    <div class="modal">
+        <h3>Join us to get access to the latest stories!</h3>
+        <button onclick="closeModal()" class="modal-button">Close</button>
+    </div>
+
+    <footer class="main-footer-container">
+        <div class="main-footer">
+            <span class="logo">Blogin<span class="dot">.</span></span>
+            <span class="copy-rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                Pixelhint.com</span>
+            <ul class="social-logos clean-list flex">
+                <li>
+                    <img class="icon-img" src="imgs/facebook.png" alt="facebook">
+                </li>
+                <li><img class="icon-img" src="imgs/twitter.png" alt="twiiter"></li>
+                <li><img class="icon-img" src="imgs/Be.png" alt="Be"></li>
+                <li><img class="icon-img" src="imgs/basketball.png" alt="basketball"></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-opened');
+        }
+
+        function openModal() {
+            document.querySelector('.modal').classList.add('modal-opened')
+        }
+
+        function closeModal() {
+            document.querySelector('.modal').classList.remove('modal-opened')
+        }
+    </script>
+
+</body>
+
+</html>
