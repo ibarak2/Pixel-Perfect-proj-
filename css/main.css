@@ -406,6 +406,7 @@ p {
 
   body.menu-opened .main-nav-list {
     transform: translateX(0);
+    display: block;
   }
 }
 
